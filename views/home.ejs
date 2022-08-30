@@ -1,0 +1,36 @@
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400" rel="stylesheet">
+    <link rel="stylesheet" href="/app.css">
+    <style>
+        .form_control{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 50%;
+            background-color: rgba(128, 0, 128, 0.572);
+            padding: 20px;
+            margin: 10px auto;
+            border-radius: 20px;
+        }
+        .form_control input,.form_control input{
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+    <div class="container">
+        <h1>JOIN US</h1>
+        <p class="lead">Enter your email to join <strong><%= count %></strong> others on our waitlist. We are 100% not a cult. </p>
+        <form method="POST" action='/register'>
+            <div class="form_control">
+                <input type="text" class="form" name="email" placeholder="Enter Your Email">
+                <input type="text" class="form" name="username" placeholder="Enter Your Name">
+                <button>Join Now</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
